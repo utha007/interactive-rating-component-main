@@ -1,80 +1,83 @@
 body{
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-content: center;
     font-family: Overpass;
 }
+
 main{
-    border-radius: 1em;
-    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    padding: 0.5em;
-    max-width: 25vw;
-    position: relative;
-    top: 10em;
-    /* left: 25%; */
 }
 
-form{
+.content{
+    background-image: radial-gradient(ellipse at center top, hsl(213, 19%, 18%)0%, hsl(216, 12%, 8%)70%);
+    border-radius: 1.5em;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    max-width: 25vw;
+    max-height: 25vw;
+
+}
+.description{
+
+    align-self: center;
+    max-width: 15vw;
+    max-height: 15vw;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-
-
-
-.star img{
+.star-btn{
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 0;
     background-color: hsl(213, 19%, 18%);
-    width: 1em;
+    max-width: 4em;
+    max-height: 4em;
     border-radius: 50%;
-    padding: 0.5em;
-    align-self: flex-start;
+    border: none;
+}
+form{
 
+    align-self: center;
 }
-h2{
-    color: hsl(0, 0%, 100%);
-    font-weight: 700;
-}
-p{
-    font-size: 14px;
-    color: hsl(217, 12%, 63%);
-    font-weight: 400;
-}
-.btn-value{
+.btn-value {
     background-color: hsl(213, 19%, 18%);
     border: none;
     min-width: 2em;
-    min-height:2em;
+    min-height: 2em;
     border-radius: 50%;
     color: hsl(217, 12%, 63%);
-    
     font-weight: 400;
+    margin-left: 1em;
+    
 
 }
-.submit-btn a button{
+
+.submit-btn a button {
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
     width: 15em;
     border-radius: 1em;
     border: none;
-    margin: 0.5em;
+    margin: 1em;
     padding: 0.5em;
 
 }
-.values{
-    display: flex;
-    gap: 1em;
-
+h2{
+    color: white;
+    font-weight: 700;
 }
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 20vw;
+p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: 400;
 }
